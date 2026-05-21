@@ -120,7 +120,7 @@ const CameraScanner = () => {
       setLoading(true);
 
       const response = await axios.post(
-        'https://sawitcare-ai-production.up.railway.app/analyze',
+        'https://sawitcare-ai-production.up.railway.app/analyze', // 'http://localhost:5000/analyze' switch untuk local testing
         {
           image: photo,
         },
